@@ -12,7 +12,7 @@ import {
   Hint
 } from "./styles";
 
-const OrderAction = () => {
+const OrderAction = ({ totalOrder }: { totalOrder: number }) => {
   const handleOrderNow = () => {
     console.log("order Now");
   };
@@ -25,7 +25,7 @@ const OrderAction = () => {
     <SectionWrapper>
       <HeaderWrapper>
         <Header>Total</Header>
-        <Price>$12,100</Price>
+        <Price>${totalOrder}</Price>
       </HeaderWrapper>
 
       <ActionWrapper>

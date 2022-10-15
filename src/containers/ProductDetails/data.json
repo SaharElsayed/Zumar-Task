@@ -47,17 +47,20 @@
     {
       "id": 1,
       "text": "Free",
-      "duration": "Estimated 15 - 30 days"
+      "duration": "Estimated 15 - 30 days",
+      "price": 100
     },
     {
       "id": 2,
       "text": "Fast",
-      "duration": "Estimated 5 - 7 days"
+      "duration": "Estimated 5 - 7 days",
+      "price": 200
     },
     {
       "id": 3,
       "text": "Rocket",
-      "duration": "Estimated 2 - 5 days"
+      "duration": "Estimated 2 - 5 days",
+      "price": 300
     }
   ]
 }

@@ -12,9 +12,18 @@ import {
 } from "./styles";
 
 const ShippingOptions = ({
-  options
+  shippingPrice,
+  options,
+  changeShippingOption
 }: {
-  options: { id: number; text: string; duration: string }[];
+  shippingPrice: number;
+  options: {
+    id: number;
+    text: string;
+    duration: string;
+    price: number;
+  }[];
+  changeShippingOption: (price: number) => void;
 }) => {
   const [selectedOption, setSelectedOption] = useState(1);
 
@@ -22,13 +31,17 @@ const ShippingOptions = ({
     e: React.ChangeEvent<HTMLInputElement>
   ): void => {
     setSelectedOption(+e.target.value);
+    const selectedOption = options.filter(
+      (option) => option.id === +e.target.value
+    );
+    changeShippingOption(selectedOption[0].price);
   };
 
   return (
     <SectionWrapper>
       <HeaderWrapper>
         <Header>Shipping </Header>
-        <Price>$100</Price>
+        <Price>${shippingPrice}</Price>
       </HeaderWrapper>
 
       <OptionsWrapper>

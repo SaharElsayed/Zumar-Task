@@ -10,9 +10,11 @@ import {
 } from "./styles";
 
 const Quantity = ({
+  initialPrice,
   quantity,
   changeQuantity
 }: {
+  initialPrice: number;
   quantity: number;
   changeQuantity: (q: number) => void;
 }) => {
@@ -27,7 +29,7 @@ const Quantity = ({
     <SectionWrapper>
       <HeaderWrapper>
         <Header>Quantity</Header>
-        <Price>$12,000</Price>
+        <Price>${initialPrice}</Price>
       </HeaderWrapper>
       <ActionWrapper>
         <IncrementDecrementButton
