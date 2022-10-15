@@ -1,0 +1,60 @@
+{
+  "heroImg": "/assets/images/hero-img.png",
+  "thumbnails": [
+    "/assets/images/thumbnail-1.png",
+    "/assets/images/thumbnail-2.png",
+    "/assets/images/thumbnail-3.png"
+  ],
+  "name": "Single SIM 11 Pro Max Phone Gold 512GB6.5 Inch Hot Selling Phone Wholesale",
+  "code": "578902-00",
+	"rate": {
+		"rate": 4.6,
+		"numberOfRaters": "200"
+	},
+  "pricingOptions": [
+    {
+      "quantity": "10 - 25",
+      "price": "AED 1,150,50.00"
+    },
+    {
+      "quantity": "10 - 19",
+      "price": "$1,145.00"
+    },
+    {
+      "quantity": "50+",
+      "price": "$1,145.00"
+    }
+  ],
+  "colorsOptions": [
+    {
+			"id": 1,
+      "thumbnail": "/assets/images/color-1.png",
+      "text": "Black"
+    },
+    {
+			"id": 2,
+      "thumbnail": "/assets/images/color-2.png",
+      "text": "Red"
+    },
+    {
+			"id": 3,
+      "thumbnail": "/assets/images/color-3.png",
+      "text": "Green"
+    }
+  ],
+  "storageOptions": [128, 256, 512],
+  "shippingOptions": [
+    {
+      "text": "Free",
+      "duration": "Estimated 15 - 30 days"
+    },
+    {
+      "text": "Fast",
+      "duration": "Estimated 5 - 7 days"
+    },
+    {
+      "text": "Rocket",
+      "duration": "Estimated 2 - 5 days"
+    }
+  ]
+}

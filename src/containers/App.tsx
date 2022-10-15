@@ -1,13 +1,13 @@
-import React from 'react';
-import Button from '../components/Button';
-import './App.scss';
+import React from "react";
+import Layout from "./Layout";
+import ProductDetails from "./ProductDetails";
 
 const App = () => {
   return (
-    <div className="App">
-      <Button />
-    </div>
+    <Layout>
+      <ProductDetails />
+    </Layout>
   );
-}
+};
 
 export default App;

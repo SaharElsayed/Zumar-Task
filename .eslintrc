@@ -5,8 +5,9 @@
     "prettier"
   ],
   "plugins": ["prettier"],
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
+    "ecmaVersion": 8,
     "requireConfigFile": false,
     "ecmaFeatures": {
       "jsx": true,
@@ -18,7 +19,22 @@
     "guard-for-in": "off",
     "no-extend-native": "off",
     "no-inner-declarations": "warn",
-    "no-invalid-this": "warn"
+    "no-invalid-this": "warn",
+    "react/display-name": "off",
+    "max-len": [
+      "warn",
+      {
+        "code": 120,
+        "comments": 120,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "tabWidth": 2
+      }
+    ]
   },
   "env": {
     "browser": true,
