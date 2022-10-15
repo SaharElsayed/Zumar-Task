@@ -7,10 +7,10 @@
   ],
   "name": "Single SIM 11 Pro Max Phone Gold 512GB6.5 Inch Hot Selling Phone Wholesale",
   "code": "578902-00",
-	"rate": {
-		"rate": 4.6,
-		"numberOfRaters": "200"
-	},
+  "rate": {
+    "rate": 4.6,
+    "numberOfRaters": "200"
+  },
   "pricingOptions": [
     {
       "quantity": "10 - 25",
@@ -27,17 +27,17 @@
   ],
   "colorsOptions": [
     {
-			"id": 1,
+      "id": 1,
       "thumbnail": "/assets/images/color-1.png",
       "text": "Black"
     },
     {
-			"id": 2,
+      "id": 2,
       "thumbnail": "/assets/images/color-2.png",
       "text": "Red"
     },
     {
-			"id": 3,
+      "id": 3,
       "thumbnail": "/assets/images/color-3.png",
       "text": "Green"
     }
@@ -45,14 +45,17 @@
   "storageOptions": [128, 256, 512],
   "shippingOptions": [
     {
+      "id": 1,
       "text": "Free",
       "duration": "Estimated 15 - 30 days"
     },
     {
+      "id": 2,
       "text": "Fast",
       "duration": "Estimated 5 - 7 days"
     },
     {
+      "id": 3,
       "text": "Rocket",
       "duration": "Estimated 2 - 5 days"
     }

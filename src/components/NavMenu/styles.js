@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Ul = styled.ul`
   list-style: none;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Li = styled.li`

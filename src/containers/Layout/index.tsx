@@ -1,17 +1,8 @@
 import React from "react";
 import Header from "../Header";
-import styled from "styled-components";
-
 import Breadcrumb from "../../components/Breadcrumb";
 
-const Container = styled.main`
-  width: 90vw;
-  margin: 0 auto;
-`;
-
-const HorizontalLine = styled.hr`
-  border: 1px solid ${(props) => props.theme.lightGrey};
-`;
+import { Container, HorizontalLine } from "./styles";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const breadcrumbItems = [

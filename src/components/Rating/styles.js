@@ -3,11 +3,15 @@ import styled from "styled-components";
 export const RatingContainer = styled.div`
   display: flex;
   align-items: center;
+  gap: 20px;
+`;
+
+export const TextContainer = styled.div`
+  display: flex;
 `;
 
 export const Stars = styled.div`
   color: ${(props) => props.theme.rating};
-  margin: 0 20px 0 50px;
 `;
 
 export const RateNumber = styled.p`

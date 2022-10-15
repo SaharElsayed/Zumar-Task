@@ -12,6 +12,10 @@ export const Header = styled.h3`
 
 export const OptionsWrapper = styled.div`
   display: flex;
+  @media (max-width: 425px) {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 `;
 
 export const OptionContent = styled.div`

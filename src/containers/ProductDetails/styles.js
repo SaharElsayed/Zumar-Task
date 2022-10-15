@@ -4,7 +4,13 @@ export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 2fr 3fr;
   gap: 40px;
-  padding-bottom: 80px;
+  padding: 50px 0;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 2fr;
+  }
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ImagesSection = styled.section`

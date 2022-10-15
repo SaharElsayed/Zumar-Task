@@ -56,6 +56,7 @@ const FontStyles = createGlobalStyle`
 * {
   font-family: 'Poppins-Regular', sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 `;
 

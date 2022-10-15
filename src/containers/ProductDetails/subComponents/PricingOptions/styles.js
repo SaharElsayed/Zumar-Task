@@ -3,8 +3,12 @@ import styled from "styled-components";
 export const SectionContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px 50px;
   margin-bottom: 30px;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 10px 30px;
+  }
 `;
 
 export const NumberOfPieces = styled.p`

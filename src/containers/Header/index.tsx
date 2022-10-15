@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
+import {
+  faShoppingBag,
+  faBars
+} from "@fortawesome/free-solid-svg-icons";
 
 import DropDown from "../../components/DropDown";
 import NavMenu from "../../components/NavMenu";
@@ -11,10 +14,14 @@ import {
   HeaderContainer,
   FlexContainer,
   CartContainer,
-  CartBagde
+  CartBagde,
+  SearchFilterContainer,
+  MobileMenu
 } from "./styles";
+import MobileNavMenu from "../../components/MobileNavMenu";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
   const options = [
     {
       id: 0,
@@ -33,23 +40,39 @@ const Header = () => {
     }
   ];
 
+  const toggleMobileMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
-    <HeaderContainer>
-      <Logo />
-      <FlexContainer>
-        <DropDown options={options} />
-        <Search />
-      </FlexContainer>
-      <FlexContainer>
-        <NavMenu />
-        <CartContainer>
-          <CartBagde>
-            <p>2</p>
-          </CartBagde>
-          <FontAwesomeIcon icon={faShoppingBag} size="sm" />
-        </CartContainer>
-      </FlexContainer>
-    </HeaderContainer>
+    <>
+      <HeaderContainer>
+        <Logo />
+
+        <SearchFilterContainer>
+          <DropDown options={options} />
+          <Search />
+        </SearchFilterContainer>
+
+        <FlexContainer>
+          <NavMenu />
+          <CartContainer>
+            <CartBagde>
+              <p>2</p>
+            </CartBagde>
+            <FontAwesomeIcon icon={faShoppingBag} size="sm" />
+          </CartContainer>
+          <MobileMenu>
+            <FontAwesomeIcon
+              onClick={toggleMobileMenu}
+              icon={faBars}
+              size="lg"
+            />
+            {showMenu && <MobileNavMenu />}
+          </MobileMenu>
+        </FlexContainer>
+      </HeaderContainer>
+    </>
   );
 };
 

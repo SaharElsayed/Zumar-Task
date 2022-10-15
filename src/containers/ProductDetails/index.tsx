@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import ProductHeroImg from "../../components/ProductHeroImg";
 import Thumbanils from "../../components/Thumbnails";
 import productData from "./data.json";
 import RatingSection from "./subComponents/RatingSection";
+import PricingOptions from "./subComponents/PricingOptions";
+import ColorsOptions from "./subComponents/ColorsOptions";
+import StorageOptions from "./subComponents/StorageOptions";
+import Quantity from "./subComponents/Quantity";
 
 import {
   GridContainer,
@@ -10,11 +14,17 @@ import {
   ProductName,
   DetailsSection
 } from "./styles";
-import PricingOptions from "./subComponents/PricingOptions";
-import ColorsOptions from "./subComponents/ColorsOptions";
-import StorageOptions from "./subComponents/StorageOptions";
+import ShippingOptions from "./subComponents/ShippingOptions";
+import OrderAction from "./subComponents/OrderAction";
 
 const ProductDetails = () => {
+  const [order, setOrder] = useState({ quantity: 51 });
+
+  const changeQuantity = (q: number): void => {
+    setOrder({ quantity: q });
+    console.log(q);
+  };
+
   return (
     <GridContainer>
       <ImagesSection>
@@ -31,6 +41,12 @@ const ProductDetails = () => {
         <PricingOptions options={productData.pricingOptions} />
         <ColorsOptions options={productData.colorsOptions} />
         <StorageOptions options={productData.storageOptions} />
+        <Quantity
+          quantity={order.quantity}
+          changeQuantity={changeQuantity}
+        />
+        <ShippingOptions options={productData.shippingOptions} />
+        <OrderAction />
       </DetailsSection>
     </GridContainer>
   );

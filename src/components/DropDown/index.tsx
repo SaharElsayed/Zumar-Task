@@ -1,13 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-
-const SelectMenu = styled.select`
-  border: none;
-  font-size: 16px;
-  &:focus {
-    outline: none;
-  }
-`;
+import { SelectMenu } from "./styles";
 
 const DropDown = ({
   options
